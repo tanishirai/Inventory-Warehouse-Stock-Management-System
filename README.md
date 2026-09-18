@@ -1,6 +1,6 @@
 # StockPilot — CLI Inventory & Warehouse Stock Management System
 
-A command-line inventory and multi-warehouse stock management system built for **CSE2006 Programming in Java** (VIT Bhopal, Build-Your-Own-Project evaluation). It models a product catalogue, multiple warehouses, per-warehouse stock levels with different floor policies, inbound/outbound/transfer movements, and concurrent order-picking — all backed by a real embedded SQL database.
+A command-line inventory and multi-warehouse stock management system built for **CSE2006 Programming in Java**. It models a product catalogue, multiple warehouses, per-warehouse stock levels with different floor policies, inbound/outbound/transfer movements, and concurrent order-picking — all backed by a real embedded SQL database.
 
 ## Overview
 
@@ -60,8 +60,8 @@ If you don't have Maven, install it from https://maven.apache.org/install.html, 
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/{your-username}/{your-repo-name}.git
-cd stockpilot
+git clone https://github.com/tanishirai/Inventory-Warehouse-Stock-Management-System.git
+cd Inventory-Warehouse-Stock-Management-System
 ```
 
 ### 2. Build the project
@@ -108,6 +108,41 @@ There's no GUI dependency — the entire application is drivable from a terminal
 6. Check `logs/app.log` — every operation you just performed should appear there with a timestamp
 7. Export movements and open the resulting CSV in a spreadsheet program
 8. Run **Run Reorder Check** after dispatching stock below a product's reorder level and confirm the alert appears
+
+## Screenshots
+
+Sample CLI session showing registration, catalogue setup, stock movements, the concurrency demo, and reporting.
+
+**Registration & login**
+![Registration and login](screenshots/01-register-login.png)
+
+**Adding a product and warehouses**
+![Add product and warehouses](screenshots/02-add-product-warehouse.png)
+
+**Initializing stock**
+![Initialize stock](screenshots/03-initialize-stock.png)
+
+**Stock in / stock out**
+![Stock in and stock out](screenshots/04-stock-in-out.png)
+
+**Insufficient stock — exception handling in action**
+![Insufficient stock exception](screenshots/05-insufficient-stock-exception.png)
+
+**Transfer between warehouses**
+![Transfer stock](screenshots/06-transfer-stock.png)
+
+**Movement history & totals**
+![Movement history](screenshots/07-movement-history.png)
+
+**Concurrent batch demo (thread pool)**
+![Concurrent batch](screenshots/08-batch-concurrency.png)
+
+**Reorder check (background thread)**
+![Reorder check](screenshots/09-reorder-check.png)
+
+**CSV export**
+![CSV export](screenshots/10-csv-export.png)
+
 
 ## Design Notes
 
