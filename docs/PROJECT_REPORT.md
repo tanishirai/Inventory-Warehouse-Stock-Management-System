@@ -47,7 +47,6 @@ body {
   <h2 style="font-size: 16pt; margin-bottom: 5px;">Tanishi Rai</h2>
   <p style="font-size: 11pt; margin-bottom: 60px;">B.Tech Computer Science Engineering<br>23BCE10299</p>
   
-  <br><br>
   <h3 style="font-size: 13pt; margin-top: 40px;">September 2026</h3>
 </div>
 
